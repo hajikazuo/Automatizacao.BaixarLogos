@@ -6,7 +6,6 @@ brands_resp.raise_for_status()
 brands = brands_resp.json()  
 
 def normalizar_nome(nome):
-    # Remove acentos, espaços, hifens e caracteres especiais
     nome = nome.lower()
     nome = re.sub(r"[àáâãäå]", "a", nome)
     nome = re.sub(r"[èéêë]", "e", nome)
